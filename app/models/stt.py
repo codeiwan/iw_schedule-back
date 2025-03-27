@@ -1,0 +1,1 @@
+# STT 변환 로직 (Whisper-Large-v3-turbo-STT-Zeroth-KO-v2)
