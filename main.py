@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import firebase_test
+from app.routers import auth, firebase_test
 
 app = FastAPI()
+app.include_router(auth.router)
 app.include_router(firebase_test.router)
 
 # CORS 설정 (프론트엔드와 통신 허용)
