@@ -44,7 +44,7 @@ class AudioRecorder:
 
     def cancel_recording(self):
         if not self.recording:
-            False
+            return
         self.recording = False
         self.thread.join()
         self.frames = []
